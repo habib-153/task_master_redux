@@ -60,9 +60,9 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             <span className="label-text font-semibold">Assign to</span>
           </label>
           <select
-            name="Assign_to"
+            name="assignedTo"
             defaultValue="default"
-            {...register("assign_to", { required: true })}
+            {...register("assignedTo", { required: true })}
             className="select focus:outline-0 border-2 rounded-lg p-2"
           >
             <option value="default" disabled>
@@ -79,7 +79,7 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             <span className="label-text font-semibold">Priority</span>
           </label>
           <select
-            name="Priority"
+            name="priority"
             defaultValue="default"
             {...register("priority", { required: true })}
             className="select focus:outline-0 border-2 rounded-lg p-2"
@@ -87,9 +87,9 @@ const AddTaskModal = ({ isOpen, setIsOpen }) => {
             <option value="default" disabled>
               Select Priority
             </option>
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="High">High</option>
           </select>
         </div>
         <div className="flex gap-2 justify-end mt-4">
